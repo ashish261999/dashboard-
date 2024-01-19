@@ -7,7 +7,13 @@ require("./connect/connect");
 
 const app = express()
 const port = 8080
-app.use(cors());
+app.use(cors(
+  {
+    origin:[" https://dashboard-3-vert.vercel.app"],
+    methods: ["POST" ,"GET"],
+    credentials:true
+  }
+));
 app.use(express.json());
 
 app.get('/', (req, res) => {
