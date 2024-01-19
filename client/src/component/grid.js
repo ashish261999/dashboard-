@@ -13,7 +13,7 @@ import Jobcart from "./jobcart";
 const Grid = () => {
   const [jobs, setjobs] = useState([]);
     useEffect(()=>{
-            fetch("http://localhost:8080/jobs/jobs")
+            fetch("https://serve-rosy.vercel.app/jobs/jobs")
             .then((response)=>{
             return response.json()    
             }).then((data)=>{
