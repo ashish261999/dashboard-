@@ -17,7 +17,7 @@ const PopupJob = (props) => {
     data.title = data.jobTitle;
     data.description = data.yoi
 
-    let res = await fetch('https://serve-rosy.vercel.app//jobs/jobs' , {
+    let res = await fetch('https://serve-rosy.vercel.app/jobs/jobs' , {
         method : 'post',
         headers : {
             'Accept': 'application/json',
