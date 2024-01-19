@@ -29,7 +29,7 @@ const App = () => {
             <Header />
             <Routes>
               <Route exact path="/job" element={<Job />} />
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Job />} />
               <Route path="/chat" element={<Chat />} />
               <Route path="/activities" element={<Activities />} />
 
